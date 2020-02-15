@@ -23,11 +23,9 @@ var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: ['https://notemymail.team', 'http://notemymail.team', 'https://notemymail.com', 'http://notemymail.com', 'https://drive.notemymail.team', 'http://drive.notemymail.team'],
-  requireHeader: ['origin', 'x-requested-with'],
+  requireHeader: [],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
-    'cookie',
-    'cookie2',
     // Strip Heroku-specific headers
     'x-heroku-queue-wait-time',
     'x-heroku-queue-depth',
