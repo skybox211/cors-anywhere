@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  originWhitelist: ['https://notemymail.team', 'http://notemymail.team', 'https://notemymail.com', 'http://notemymail.com', 'https://drive.notemymail.team', 'http://drive.notemymail.team'],
+  originWhitelist: ['https://notemymail.team', 'http://notemymail.team', 'https://notemymail.com', 'http://notemymail.com', 'https://drive.notemymail.team', 'http://drive.notemymail.team', 'http://api1.notemymail.team', 'https://api1.notemymail.team'],
   requireHeader: [],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
