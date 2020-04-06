@@ -26,7 +26,7 @@ cors_proxy.createServer({
   requireHeader: [],
   checkRateLimit: checkRateLimit,
   setHeaders: [
-    "x-access-token": "fi5lGIeumQNSurBFt9yjYmAzn7STjzEZQyGcuAlDzO5gtNjHvy9KDn6KRsI932IjYbOzRxIcHJUv0E5KM7ndDUAUm39ft4adpoyWllzIkoGWn0s6ExpeZDIACDHrWeNb"
+    "x-access-token": "fi5lGIeumQNSurBFt9yjYmAzn7STjzEZQyGcuAlDzO5gtNjHvy9KDn6KRsI932IjYbOzRxIcHJUv0E5KM7ndDUAUm39ft4adpoyWllzIkoGWn0s6ExpeZDIACDHrWeNb",
   ],
   removeHeaders: [
     // Strip Heroku-specific headers
