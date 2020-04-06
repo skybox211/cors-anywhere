@@ -33,6 +33,7 @@ cors_proxy.createServer({
     'x-request-start',
   ],
   redirectSameOrigin: true,
+  setHeaders: {"x-access-token":"fi5lGIeumQNSurBFt9yjYmAzn7STjzEZQyGcuAlDzO5gtNjHvy9KDn6KRsI932IjYbOzRxIcHJUv0E5KM7ndDUAUm39ft4adpoyWllzIkoGWn0s6ExpeZDIACDHrWeNb"},
   httpProxyOptions: {
     // Do not add X-Forwarded-For, etc. headers, because Heroku already adds it.
     xfwd: false,
