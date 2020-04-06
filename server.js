@@ -25,9 +25,6 @@ cors_proxy.createServer({
   originWhitelist: ['https://notemymail.team', 'http://notemymail.team', 'https://notemymail.com', 'http://notemymail.com', 'https://drive.notemymail.team', 'http://drive.notemymail.team', 'http://api1.notemymail.team', 'https://api1.notemymail.team'],
   requireHeader: [],
   checkRateLimit: checkRateLimit,
-  setHeaders: [
-    "x-access-token": "fi5lGIeumQNSurBFt9yjYmAzn7STjzEZQyGcuAlDzO5gtNjHvy9KDn6KRsI932IjYbOzRxIcHJUv0E5KM7ndDUAUm39ft4adpoyWllzIkoGWn0s6ExpeZDIACDHrWeNb",
-  ],
   removeHeaders: [
     // Strip Heroku-specific headers
     'x-heroku-queue-wait-time',
